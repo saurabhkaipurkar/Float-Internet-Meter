@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Floating Internet Speed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <p>Floating Internet Speed &nbsp;|&nbsp; Last updated: August 6, 2026</p>
+  </header>
+
+  <main>
+
+    <section id="overview">
+      <h2>1. Overview</h2>
+      <p>Floating Internet Speed ("the App", "we", "our") is an Android utility that displays a real-time floating
+        bubble and home-screen widget showing your device's live internet upload and download speed. This Privacy Policy
+        explains what information the App accesses, how it is used, and your rights regarding that information.</p>
+      <div class="note">In short: the App does <strong>not</strong> collect, store, transmit, or sell any personal data
+        to us or to any third party. All speed measurements are calculated and displayed entirely on your device.</div>
+    </section>
+
+    <section id="collect">
+      <h2>2. What We Collect</h2>
+      <p>The App does not require an account, does not use analytics SDKs, does not use advertising SDKs, and does not
+        connect to any remote server operated by us.</p>
+      <ul>
+        <li><strong>No personal information</strong> — we do not collect your name, email, phone number, or contact
+          list.</li>
+        <li><strong>No location data</strong> — the App does not access GPS or location services.</li>
+        <li><strong>No browsing or usage history</strong> — we do not log which apps or websites generate the network
+          traffic being measured.</li>
+        <li><strong>No advertising identifiers</strong> — the App contains no ad network or tracking library.</li>
+      </ul>
+    </section>
+
+    <section id="permissions">
+      <h2>3. Permissions We Request & Why</h2>
+      <table>
+        <tr>
+          <th>Permission</th>
+          <th>Purpose</th>
+        </tr>
+        <tr>
+          <td>Network State Access</td>
+          <td>Read live network traffic byte counters from the Android system to calculate current upload/download
+            speed.</td>
+        </tr>
+        <tr>
+          <td>Display Over Other Apps</td>
+          <td>Required to show the floating speed bubble on top of other apps and your home screen.</td>
+        </tr>
+        <tr>
+          <td>Foreground Service</td>
+          <td>Keeps the speed monitor running reliably while the bubble/widget is active, in compliance with Android
+            background-execution limits.</td>
+        </tr>
+        <tr>
+          <td>Notifications</td>
+          <td>Shows the persistent status notification required by Android for foreground services, and lets you control
+            the floating widget from the notification shade.</td>
+        </tr>
+        <tr>
+          <td>Internet</td>
+          <td>Used only to measure the volume of data your device sends/receives — the App itself does not make network
+            requests to any server.</td>
+        </tr>
+      </table>
+      <div class="note">None of these permissions are used to collect, log, or transmit your personal data. They exist
+        solely to power the on-device speed-measurement and overlay features.</div>
+    </section>
+
+    <section id="usage">
+      <h2>4. How Information Is Used</h2>
+      <p>Network traffic statistics (bytes sent/received) are read directly from Android's system-level network counters
+        in real time, used only to calculate and display your current speed, and are never written to a file, database,
+        or sent anywhere. Once the App is closed or the calculation moment passes, that data point is discarded.</p>
+    </section>
+
+    <section id="storage">
+      <h2>5. Data Storage & Security</h2>
+      <ul>
+        <li>App preferences (such as bubble position, size, color, and widget style) are stored locally on your device
+          only, using Android's private app storage.</li>
+        <li>This preference data is never transmitted off your device and is automatically removed if you uninstall the
+          App.</li>
+        <li>We do not operate any backend server, so there is no remote database that could be breached.</li>
+      </ul>
+    </section>
+
+    <section id="sharing">
+      <h2>6. Data Sharing & Third Parties</h2>
+      <p>We do not sell, rent, trade, or share any user data with third parties, advertisers, or analytics companies,
+        because no such data is collected in the first place. The App contains no third-party SDKs for advertising,
+        analytics, or crash reporting.</p>
+    </section>
+
+    <section id="children">
+      <h2>7. Children's Privacy</h2>
+      <p>The App is not directed at children under 13 and does not knowingly collect any information from anyone,
+        regardless of age, since it collects no personal data at all.</p>
+    </section>
+
+    <section id="rights">
+      <h2>8. Your Rights & Choices</h2>
+      <ul>
+        <li>You can revoke the "Display over other apps" or "Notifications" permission at any time from Android
+          Settings; the App will simply lose the related feature.</li>
+        <li>You can clear all locally stored preferences by clearing the App's storage/cache from Android Settings →
+          Apps.</li>
+        <li>Uninstalling the App permanently removes all locally stored data associated with it.</li>
+      </ul>
+    </section>
+
+    <section id="changes">
+      <h2>9. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in the App's functionality or legal
+        requirements. Material changes will be reflected by an updated "Last updated" date at the top of this page.
+        Continued use of the App after changes are posted constitutes acceptance of the revised policy.</p>
+    </section>
+
+    <section id="contact">
+      <h2>10. Contact Us</h2>
+      <div class="contact-block">
+        <p>Questions about this Privacy Policy? Reach out to us:</p>
+        <p><strong>Siddharth Ratan Gedam</strong></p>
+        <p><a href="mailto:thesiddharthgedam@gmail.com">thesiddharthgedam@gmail.com</a></p>
+        <p>India</p>
+      </div>
+    </section>
+
+    <div class="link-block">
+      <p>Also read our <a href="terms.html">Terms & Conditions</a></p>
+    </div>
+
+  </main>
+
+  <footer>
+    © <span id="year">2026</span> Floating Internet Speed. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

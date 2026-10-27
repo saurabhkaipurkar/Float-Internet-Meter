@@ -12,131 +12,196 @@
 
   <header>
     <h1>Privacy Policy</h1>
-    <p>Float Internet Meter &nbsp;|&nbsp; Last updated: August 6, 2026</p>
+    <p>Float Internet Meter &nbsp;|&nbsp; Last updated: October 27, 2026</p>
   </header>
 
   <main>
 
     <section id="overview">
       <h2>1. Overview</h2>
-      <p>Float Internet Meter ("the App", "we", "our") is an Android utility that displays a real-time floating
-        bubble and home-screen widget showing your device's live internet upload and download speed. This Privacy Policy
-        explains what information the App accesses, how it is used, and your rights regarding that information.</p>
-      <div class="note">In short: the App does <strong>not</strong> collect, store, transmit, or sell any personal data
-        to us or to any third party. All speed measurements are calculated and displayed entirely on your device.</div>
+      <p>Float Internet Meter ("the App", "we", "our") is an Android utility that shows your live internet speed in a
+        floating window, in the status bar, and in a home-screen widget. It also shows how much Wi-Fi and mobile data
+        your device has used. The App is published by DEVELOPER_NAME ("the Developer"). This Privacy Policy explains
+        what the App accesses on your device, how that information is used, and the choices you have.</p>
+      <div class="note">In short: the App does <strong>not</strong> collect, transmit, sell, or share your personal
+        data. It has no accounts, no ads, no analytics, and does not request the Internet permission. Everything the
+        App uses is processed and stored only on your device.</div>
     </section>
 
     <section id="collect">
-      <h2>2. What We Collect</h2>
-      <p>The App does not require an account, does not use analytics SDKs, does not use advertising SDKs, and does not
-        connect to any remote server operated by us.</p>
+      <h2>2. Information We Collect</h2>
+      <p>We do not collect any information from you. We do not operate any server that the App talks to, so we never
+        receive data from your device.</p>
       <ul>
-        <li><strong>No personal information</strong> — we do not collect your name, email, phone number, or contact
-          list.</li>
-        <li><strong>No location data</strong> — the App does not access GPS or location services.</li>
-        <li><strong>No browsing or usage history</strong> — we do not log which apps or websites generate the network
-          traffic being measured.</li>
-        <li><strong>No advertising identifiers</strong> — the App contains no ad network or tracking library.</li>
+        <li><strong>No personal information</strong> — no name, email, phone number, or contacts.</li>
+        <li><strong>No location data</strong> — the App does not use GPS or location services.</li>
+        <li><strong>No app or browsing history</strong> — the App does not read which apps you use, which apps are
+          installed, which websites you visit, or how much data each app uses.</li>
+        <li><strong>No advertising identifiers</strong> — the App has no ad or tracking libraries.</li>
+        <li><strong>No analytics or crash-reporting libraries</strong> inside the App.</li>
       </ul>
     </section>
 
+    <section id="device-data">
+      <h2>3. Information the App Uses on Your Device</h2>
+      <p>To do its job, the App reads and keeps the following on your phone. None of it leaves your device.</p>
+      <table>
+        <tr>
+          <th>Data</th>
+          <th>Purpose</th>
+          <th>Stored?</th>
+        </tr>
+        <tr>
+          <td>Live network speed (bytes sent and received, from Android's system counters)</td>
+          <td>Calculate and show your current download and upload speed.</td>
+          <td>Not stored, except the latest reading, which the home-screen widget needs.</td>
+        </tr>
+        <tr>
+          <td>Connection type (Wi-Fi or mobile)</td>
+          <td>Show which network you are on.</td>
+          <td>Latest value only, for the widget.</td>
+        </tr>
+        <tr>
+          <td>Daily device-wide totals of Wi-Fi and mobile data used</td>
+          <td>Show the Network Usage tab (today, 7 days, this month, 30 days).</td>
+          <td>Yes, in the App's private database on your phone. The tab shows up to the last 31 days.</td>
+        </tr>
+        <tr>
+          <td>Your settings (theme, colors, font, text size, speed unit, toggles, position of the floating window)
+          </td>
+          <td>Remember how you set up the App.</td>
+          <td>Yes, in the App's private storage on your phone.</td>
+        </tr>
+      </table>
+      <div class="note">The data usage totals are for the whole device. They do not say which app used the data.</div>
+    </section>
+
     <section id="permissions">
-      <h2>3. Permissions We Request & Why</h2>
+      <h2>4. Permissions We Request &amp; Why</h2>
       <table>
         <tr>
           <th>Permission</th>
           <th>Purpose</th>
         </tr>
         <tr>
-          <td>Network State Access</td>
-          <td>Read live network traffic byte counters from the Android system to calculate current upload/download
-            speed.</td>
+          <td>Display over other apps</td>
+          <td>Show the floating speed window on top of other apps. Optional. You grant it in Android Settings and can
+            take it back at any time.</td>
         </tr>
         <tr>
-          <td>Display Over Other Apps</td>
-          <td>Required to show the floating speed bubble on top of other apps and your home screen.</td>
-        </tr>
-        <tr>
-          <td>Foreground Service</td>
-          <td>Keeps the speed monitor running reliably while the bubble/widget is active, in compliance with Android
-            background-execution limits.</td>
+          <td>Usage access</td>
+          <td>Ask Android for the device-wide Wi-Fi and mobile data totals shown in the Network Usage tab. The App
+            uses it only for these totals. It does not read which apps you use, for how long, or how much data each app
+            uses. Optional: without it, live speed still works and only the Network Usage tab is unavailable.</td>
         </tr>
         <tr>
           <td>Notifications</td>
-          <td>Shows the persistent status notification required by Android for foreground services, and lets you control
-            the floating widget from the notification shade.</td>
+          <td>Show your speed in the status bar and notification shade, and show the notification Android requires
+            while the App runs in the background. Optional on Android 13 and later.</td>
         </tr>
         <tr>
-          <td>Internet</td>
-          <td>Used only to measure the volume of data your device sends/receives — the App itself does not make network
-            requests to any server.</td>
+          <td>Foreground service (special use)</td>
+          <td>Keep the speed meter running while you use other apps. Android shows a notification while it runs.</td>
+        </tr>
+        <tr>
+          <td>Run at startup</td>
+          <td>Start the speed meter again after your phone restarts or the App is updated, if you left it on. You can
+            turn this off in Settings &rarr; Start on boot.</td>
+        </tr>
+        <tr>
+          <td>Network state</td>
+          <td>Tell whether you are on Wi-Fi or mobile data.</td>
         </tr>
       </table>
-      <div class="note">None of these permissions are used to collect, log, or transmit your personal data. They exist
-        solely to power the on-device speed-measurement and overlay features.</div>
+      <p>The App also offers an optional Quick Settings tile. It only switches the floating window on or off and needs
+        no extra data.</p>
+      <div class="note">None of these permissions are used to collect, log, or send your personal data anywhere. The
+        App does not request the Internet permission.</div>
     </section>
 
     <section id="usage">
-      <h2>4. How Information Is Used</h2>
-      <p>Network traffic statistics (bytes sent/received) are read directly from Android's system-level network counters
-        in real time, used only to calculate and display your current speed, and are never written to a file, database,
-        or sent anywhere. Once the App is closed or the calculation moment passes, that data point is discarded.</p>
+      <h2>5. How Information Is Used</h2>
+      <p>Information is used only to show you your speed and data usage and to remember your settings. We do not use it
+        for advertising, profiling, or any other purpose, and we do not combine it with any other data.</p>
     </section>
 
     <section id="storage">
-      <h2>5. Data Storage & Security</h2>
+      <h2>6. Storage, Security &amp; Retention</h2>
       <ul>
-        <li>App preferences (such as bubble position, size, color, and widget style) are stored locally on your device
-          only, using Android's private app storage.</li>
-        <li>This preference data is never transmitted off your device and is automatically removed if you uninstall the
-          App.</li>
-        <li>We do not operate any backend server, so there is no remote database that could be breached.</li>
+        <li>All data is kept in the App's private storage on your device, which other apps cannot read under normal
+          Android protections.</li>
+        <li>The App does not turn on Android's automatic backup for its data, so it is not copied to cloud backups by
+          the App.</li>
+        <li>We run no backend server, so there is no remote database of your data that could be breached.</li>
+        <li>Data stays on your device until you delete it. See "Your Rights &amp; Choices" below.</li>
       </ul>
     </section>
 
     <section id="sharing">
-      <h2>6. Data Sharing & Third Parties</h2>
-      <p>We do not sell, rent, trade, or share any user data with third parties, advertisers, or analytics companies,
-        because no such data is collected in the first place. The App contains no third-party SDKs for advertising,
-        analytics, or crash reporting.</p>
-    </section>
-
-    <section id="children">
-      <h2>7. Children's Privacy</h2>
-      <p>The App is not directed at children under 13 and does not knowingly collect any information from anyone,
-        regardless of age, since it collects no personal data at all.</p>
+      <h2>7. Sharing &amp; Third Parties</h2>
+      <p>We do not sell, rent, trade, or share your data with anyone, because we do not have it. The App contains no
+        third-party SDKs for advertising or analytics.</p>
+      <p>Some buttons hand you over to other apps, only when you tap them:</p>
+      <ul>
+        <li><strong>Share App</strong> opens the Android share sheet, and the app you pick receives only the link
+          text.</li>
+        <li><strong>Rate Us</strong> opens Google Play.</li>
+        <li><strong>Contact Developer</strong> opens your email app. We receive only what you choose to send.</li>
+        <li><strong>Privacy Policy and Terms</strong> open in your web browser.</li>
+      </ul>
+      <p>Those apps have their own privacy policies. Separately, Google Play and Android may collect technical
+        information (for example crash reports, if you allowed it on your device) under Google's own policies. We do
+        not receive personal information from this.</p>
     </section>
 
     <section id="rights">
-      <h2>8. Your Rights & Choices</h2>
+      <h2>8. Your Rights &amp; Choices</h2>
       <ul>
-        <li>You can revoke the "Display over other apps" or "Notifications" permission at any time from Android
-          Settings; the App will simply lose the related feature.</li>
-        <li>You can clear all locally stored preferences by clearing the App's storage/cache from Android Settings →
-          Apps.</li>
-        <li>Uninstalling the App permanently removes all locally stored data associated with it.</li>
+        <li>Take back "Display over other apps", "Usage access", or "Notifications" at any time in Android Settings.
+          The App then loses only the related feature.</li>
+        <li>Open the App &rarr; Settings &rarr; <strong>Reset All Data</strong> to erase your settings and stop the
+          meter.</li>
+        <li>Android Settings &rarr; Apps &rarr; Float Internet Meter &rarr; Storage &rarr; <strong>Clear
+            data</strong> removes everything the App stored, including the saved daily totals.</li>
+        <li>Uninstalling the App removes all data it stored on your device.</li>
       </ul>
+      <p>Because we hold no personal data about you, there is nothing on our side to access, correct, export, or
+        delete. If you still have a question or request, write to us using the contact details below.</p>
+    </section>
+
+    <section id="children">
+      <h2>9. Children's Privacy</h2>
+      <p>The App is a general utility and is not directed at children under 13. It does not knowingly collect
+        information from anyone, whatever their age, because it collects no personal data.</p>
+    </section>
+
+    <section id="laws">
+      <h2>10. Applicable Laws</h2>
+      <p>This policy is written to meet Google Play's User Data policy and with applicable privacy laws in mind,
+        including India's Digital Personal Data Protection Act, 2023, and, where they apply, the GDPR and CCPA. Because
+        the App does not collect or share personal data, most obligations about collecting, sharing, or selling data
+        do not arise.</p>
     </section>
 
     <section id="changes">
-      <h2>9. Changes to This Policy</h2>
-      <p>We may update this Privacy Policy from time to time to reflect changes in the App's functionality or legal
-        requirements. Material changes will be reflected by an updated "Last updated" date at the top of this page.
-        Continued use of the App after changes are posted constitutes acceptance of the revised policy.</p>
+      <h2>11. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy when the App changes or the law requires it. The "Last updated" date at the
+        top shows the latest version. If a change affects how your data is handled, we will make it clear in the App
+        or on the Google Play listing.</p>
     </section>
 
     <section id="contact">
-      <h2>10. Contact Us</h2>
+      <h2>12. Contact Us</h2>
       <div class="contact-block">
         <p>Questions about this Privacy Policy? Reach out to us:</p>
-        <p><strong>Siddharth Ratan Gedam</strong></p>
-        <p><a href="mailto:thesiddharthgedam@gmail.com">thesiddharthgedam@gmail.com</a></p>
+        <p><strong>DEVELOPER_NAME</strong></p>
+        <p><a href="mailto:CONTACT_EMAIL">CONTACT_EMAIL</a></p>
         <p>India</p>
       </div>
     </section>
 
     <div class="link-block">
-      <p>Also read our <a href="terms.html">Terms & Conditions</a></p>
+      <p>Also read our <a href="terms.html">Terms &amp; Conditions</a></p>
     </div>
 
   </main>
